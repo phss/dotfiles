@@ -11,9 +11,10 @@ set fish_greeting ""
 #set fish_greeting (fortune)
 
 set -x JAVA_HOME (/usr/libexec/java_home -v 1.8)
-set -x PATH /usr/local/bin /Users/pschneid/Documents/programming/go/bin /Users/pschneid/.cargo/bin $PATH
-set -x RUST_SRC_PATH /Users/pschneid/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
-set -x GOPATH /Users/pschneid/Documents/programming/go
+set -x PATH /usr/local/bin $PATH
+#set -x PATH /usr/local/bin /Users/pschneid/Documents/programming/go/bin /Users/pschneid/.cargo/bin $PATH
+#set -x RUST_SRC_PATH /Users/pschneid/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
+#set -x GOPATH /Users/pschneid/Documents/programming/go
 
 status --is-interactive; and . (rbenv init -|psub)
 status --is-interactive; and . (pyenv init -|psub)
