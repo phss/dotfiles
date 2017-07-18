@@ -1,0 +1,29 @@
+[user]
+	name = Paulo Schneider
+	email = paulo.schneider@gmail.com
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	st = status
+	ci = commit -au -m
+	ps = push
+	cv = commit -v
+	au = add -u
+	psoh = push -u origin head
+	co = checkout
+	cav = commit -av
+	ignore = update-index --assume-unchanged
+	unignore = update-index --no-assume-unchanged
+	cam = commit --amend
+[color]
+	ui = true
+[core]
+	editor = /usr/bin/vim
+	excludesfile = /Users/pschneid/.gitignore_global
+[push]
+	default = simple
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[help]
+	autocorrect = 30
