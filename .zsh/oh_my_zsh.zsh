@@ -1,6 +1,6 @@
 export ZSH=~/.oh-my-zsh
 
-ZSH_THEME="sorin"
+ZSH_THEME="phss"
 
 plugins=(
     git
