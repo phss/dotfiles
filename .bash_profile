@@ -1,5 +1,5 @@
-source ~/Documents/programming/scripts/git-prompt.sh
-source ~/Documents/programming/scripts/git-completion.sh
+#source ~/Documents/programming/scripts/git-prompt.sh
+#source ~/Documents/programming/scripts/git-completion.sh
 
 #export DOCKER_HOST=tcp://192.168.59.103:2375
 
@@ -19,13 +19,14 @@ alias na="n add --file"
 BOLD="\[\033[0;33m\]"
 GREEN="\[\033[0;36m\]"
 OFF="\[\033[m\]"
-GITHUB_BRANCH='$(__git_ps1 " (%s)")'
-export PS1="${BOLD}\W${GREEN}${GITHUB_BRANCH}\$${OFF} "
+#GITHUB_BRANCH='$(__git_ps1 " (%s)")'
+export PS1="${BOLD}\W${GREEN}\$${OFF} "
+#export PS1="${BOLD}\W${GREEN}${GITHUB_BRANCH}\$${OFF} "
 #export PS1="${BOLD}\h:\W${GREEN}${GITHUB_BRANCH}\$${OFF} "
 
 export GOPATH=$HOME/Documents/programming/go
 
-export PATH=/usr/local/bin:$HOME/Library/Haskell/bin:$PATH:$HOME/Documents/programming/scripts:$GOPATH/bin:/Users/pschneid/Library/Android/sdk/platform-tools:/Users/pschneid/.cargo/bin
+export PATH=/usr/local/bin:$HOME/Library/Haskell/bin:$PATH:$HOME/Documents/programming/scripts:$GOPATH/bin:/Users/pschneid/Library/Android/sdk/platform-tools:/Users/pschneid/.cargo/bin:/Users/pschneid/.nvm/versions/node/v9.5.0/bin
 
 export RUST_SRC_PATH=/Users/pschneid/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src
 
@@ -34,7 +35,7 @@ export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 # Virtual ENV
 export WORKON_HOME=~/.python/envs
 mkdir -p $WORKON_HOME
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 

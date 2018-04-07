@@ -63,3 +63,5 @@ autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 " JSX
 let g:jsx_ext_required = 0
+
+set shell=/bin/bash
