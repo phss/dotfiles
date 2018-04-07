@@ -4,6 +4,7 @@ ZSH_THEME="phss"
 
 plugins=(
     git
+    git-prompt
     autojump
     zsh-autosuggestions
     zsh-syntax-highlighting

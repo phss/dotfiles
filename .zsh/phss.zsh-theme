@@ -14,10 +14,10 @@ function random_arrow() {
 
 MODE_INDICATOR="%{$fg_bold[red]%}❮%{$reset_color%}%{$fg[red]%}❮❮%{$reset_color%}"
 local current_directory="%{$fg[green]%}%c"
-#local type_indicator="%(!.%{$fg_bold[red]%}#.%{$fg_bold[green]%}$(random_arrow)${arrow}${arrow})%"
+local type_indicator="%(!.%{$fg_bold[red]%}#.%{$fg_bold[green]%}$(random_arrow)$(random_arrow)$(random_arrow))"
 
 PROMPT='
-${current_directory}$(git_prompt_info) $(random_arrow)$(random_arrow)$(random_arrow)$reset_color%} '
+${current_directory}$(git_super_status) ${type_indicator}%{$reset_color%} '
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" (%{$fg[magenta]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[green]%})%{$reset_color%}"
@@ -35,3 +35,5 @@ ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} ✖"
 ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%} ➜"
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%} ═"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%} ✭"
+
+export LSCOLORS=''
