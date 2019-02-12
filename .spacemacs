@@ -38,7 +38,6 @@ This function should only modify configuration layer settings."
      helm
      multiple-cursors
      treemacs
-     themes-megapack
      ;; auto-completion
      ;; better-defaults
      ;; markdown
